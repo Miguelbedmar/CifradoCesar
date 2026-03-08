@@ -48,6 +48,10 @@ public class CifradoCesar {
 	}
 	
 	public void pedidaDatos() {
+		System.out.println("Ingrese el mensaje");
+		String mensajeOr=sc.nextLine();
 		
+		System.out.println("Ingrese la clave");
+		int llave=sc.nextInt();
 	}
 }
