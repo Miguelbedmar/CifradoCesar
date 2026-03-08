@@ -41,4 +41,13 @@ public class CifradoCesar {
 
 		return cifrado.toString();
 	}
+	
+	// Está función se encarga de descrifrar el mensaje
+	public  String descrifrador(String textoCifrado,int clave) {
+		return cifradoCesar(textoCifrado ,- clave);
+	}
+	
+	public void pedidaDatos() {
+		
+	}
 }
