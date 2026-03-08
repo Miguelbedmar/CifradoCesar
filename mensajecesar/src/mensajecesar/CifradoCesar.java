@@ -53,5 +53,13 @@ public class CifradoCesar {
 		
 		System.out.println("Ingrese la clave");
 		int llave=sc.nextInt();
+		
+		String textocifrado=cifradoCesar(mensajeOr, llave);
+		
+		System.out.println("\n<=====RESULTADO-FINAL=======>\n");
+		String mensajedesci=descrifrador(textocifrado, llave);
+		
+		System.out.println("El mensaje cifrado es"+":"+mensajedesci);
+		
 	}
 }
