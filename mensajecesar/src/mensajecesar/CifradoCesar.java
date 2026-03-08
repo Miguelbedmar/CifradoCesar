@@ -4,13 +4,13 @@ import java.util.Scanner;
 
 public class CifradoCesar {
 	static Scanner sc = new Scanner(System.in); 
-
+	
 	public static void main(String[] args) {
 		// El programa utilizara algoritmo de cesar
-
+		pedidaDatos();
 	}
 
-	public String cifradoCesar(String text, int llave) {
+	public static String cifradoCesar(String text, int llave) {
 		StringBuilder cifrado = new StringBuilder(); // Instancia  del StringBuilder
 		/*
 		 * Antes de nada en este caso no podemos utilizar un for Each ya que estamos
@@ -43,11 +43,11 @@ public class CifradoCesar {
 	}
 	
 	// Está función se encarga de descrifrar el mensaje
-	public  String descrifrador(String textoCifrado,int clave) {
+	public static  String descrifrador(String textoCifrado,int clave) {
 		return cifradoCesar(textoCifrado ,- clave);
 	}
 	
-	public void pedidaDatos() {
+	public static  void pedidaDatos() {
 		System.out.println("Ingrese el mensaje");
 		String mensajeOr=sc.nextLine();
 		
@@ -62,4 +62,5 @@ public class CifradoCesar {
 		System.out.println("El mensaje cifrado es"+":"+mensajedesci);
 		
 	}
+	
 }
